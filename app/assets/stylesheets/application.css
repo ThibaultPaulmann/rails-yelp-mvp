@@ -13,3 +13,40 @@
  *= require_tree .
  *= require_self
  */
+
+@import '/app/assets/stylesheets/pages/restaurants/index.css';
+
+/* Application css */
+
+.tab-primary {
+  display: inline-block;
+  margin: 5px 20px;
+  border: 3px solid transparent;
+  padding: 5px 0;
+  text-decoration: none;
+  font-size: 32px;
+  letter-spacing: 3px;
+  color: white;
+  text-align: center;
+}
+
+.tab-primary:hover {
+  color: white;
+}
+
+.tab-primary::after { 
+  display: block;
+  content: '';
+  border-bottom: 3px solid #6bc1f0;
+  transform: scaleX(0);
+  transform-origin:  0% 50%;
+  transition: transform 250ms ease-in-out;
+}
+
+.tab-primary:hover::after { transform: scaleX(1); }
+
+.tab-secondary {
+  margin: 0 20px;
+  font-size: 30px;
+  color: #6bc1f0;
+}
